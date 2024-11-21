@@ -7,8 +7,8 @@ public class HospitalManagementSystem {
                                         //jdbc connectivity url 
     private static final String url = "jdbc:mysql://localhost:3306/hospital";
 
-    private static final String username = "root";
-    private static final String password = "Omkar456@";
+    private static final String username = "YOUR USERNAME NAME";
+    private static final String password = "YOUR PASSWORD";
 
     public static void main(String[] args) {
         try{
