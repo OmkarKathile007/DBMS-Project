@@ -11,3 +11,7 @@
   Java
   JDBC
   MySQL
+
+## Connection to Database
+ Used JDBC connectivity driver
+   mysql-connector-j-9.1.0
