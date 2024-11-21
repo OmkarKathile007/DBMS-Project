@@ -10,7 +10,7 @@ CREATE TABLE patients (
 
 2. Insert Data into the patients Table
 INSERT INTO patients (id, name, age, gender) VALUES
-(1, 'Omkar', 13, 'male'),
+(1, 'Omkar', 21, 'male'),
 (2, 'Samiksha', 21, 'female'),
 (3, 'Aniket', 21, 'male'),
 (4, 'XYZ', 24, 'male');
