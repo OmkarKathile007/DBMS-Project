@@ -1,0 +1,59 @@
+1. Create the patients Table
+CREATE TABLE patients (
+    id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    gender VARCHAR(10) NOT NULL
+);
+
+
+
+2. Insert Data into the patients Table
+INSERT INTO patients (id, name, age, gender) VALUES
+(1, 'Omkar', 13, 'male'),
+(2, 'Samiksha', 21, 'female'),
+(3, 'Aniket', 21, 'male'),
+(4, 'XYZ', 24, 'male');
+
+
+
+3. Create the appointments Table
+CREATE TABLE appointments (
+    id INT PRIMARY KEY,
+    patient_id INT NOT NULL,
+    doctor_id INT NOT NULL,
+    appointment_date DATE NOT NULL,
+    FOREIGN KEY (patient_id) REFERENCES patients(id)
+);
+
+
+
+4. Insert Data into the appointments Table
+INSERT INTO appointments (id, patient_id, doctor_id, appointment_date) VALUES
+(1, 1, 1, '2024-09-24'),
+(2, 2, 2, '2024-11-12');
+
+
+
+5. Create doctors Table:
+sql
+Copy code
+CREATE TABLE doctors (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    specialization VARCHAR(100) NOT NULL
+);
+
+
+6. Insert Data into doctors Table:
+INSERT INTO doctors (name, specialization) VALUES
+('Pankaj Jain', 'Physician'),
+('Harshit Amod', 'NeuroSurgeon');
+
+
+
+
+3. Verify the Data:
+SELECT * FROM doctors;
+SELECT * FROM patients;
+SELECT * FROM appointments;
